@@ -1,0 +1,49 @@
+.header {
+  text-align: center;
+  margin: 3rem auto;
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 0 4rem;
+  text-shadow: 2px 2px wheat;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.event {
+  padding: 4rem 8rem;
+  margin: 3.2rem auto;
+  max-width: 130rem;
+  background-color: black;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 2.4rem;
+  img {
+    border-radius: 50%;
+    max-width: 50rem;
+    border: solid wheat 4px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
+}
+
+.txt {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+  .description {
+    padding: 0 4rem;
+  }
+}
+
+.btn {
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  height: fit-content;
+  margin-top: -8rem;
+}

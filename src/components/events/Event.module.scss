@@ -1,0 +1,33 @@
+.item {
+  margin-bottom: 2.4rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  padding: 1.6rem;
+  background-color: black;
+  color: white;
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
+.actions {
+  margin-left: auto;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.link {
+  background-color: white;
+  padding: 8px;
+  color: black;
+  border-radius: 4px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #999;
+    color: #fff;
+  }
+}

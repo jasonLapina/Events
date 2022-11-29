@@ -1,0 +1,8 @@
+.list {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+  column-gap: 2.4rem;
+  row-gap: 4rem;
+  margin: 5rem auto;
+}
