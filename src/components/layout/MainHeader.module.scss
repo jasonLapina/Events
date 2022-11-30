@@ -1,0 +1,11 @@
+.header {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2.4rem 8rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}

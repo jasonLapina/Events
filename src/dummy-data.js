@@ -5,7 +5,7 @@ const DUMMY_EVENTS = [
     description:
       'Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as well.',
     location: 'Somestreet 25, 12345 San Somewhereo',
-    date: '8-21-2022',
+    date: '8-21-2024',
     image: 'assets/coding.jpg',
     isFeatured: false,
   },
@@ -15,7 +15,7 @@ const DUMMY_EVENTS = [
     description:
       "We know: Networking is no fun if you are an introvert person. That's why we came up with this event - it'll be so much easier. Promised!",
     location: 'SM City, Santa Rosa, Laguna',
-    date: '9-21-2022',
+    date: '9-21-2023',
     image: 'assets/introvert.jpg',
     isFeatured: true,
   },
@@ -25,7 +25,7 @@ const DUMMY_EVENTS = [
     description:
       'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
     location: 'Tabi-tabi st., City of Jan-jan lang',
-    date: '12-03-2022',
+    date: '12-03-2023',
     image: 'assets/extrovert.jpg',
     isFeatured: true,
   },
@@ -44,9 +44,7 @@ export function getFilteredEvents(dateFilter) {
 
   let filteredEvents = DUMMY_EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
-    return (
-      eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
-    );
+    return eventDate.getFullYear() == year || eventDate.getMonth() == month - 1;
   });
 
   return filteredEvents;

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import classes from './Event.module.scss';
+import Button from '../ui/Button';
 
 function Event({ what, when, where, id, image }) {
   const formattedDate = new Date(when).toLocaleDateString('en-US', {
@@ -9,13 +10,11 @@ function Event({ what, when, where, id, image }) {
   });
   const formattedAddress = where.replaceAll(', ', '\n');
   const link = `/events/${id}`;
-
-  console.log(where);
   return (
     <li className={classes.item}>
       <img src={'/' + image} alt={what} />
       <div className={classes.content}>
-        <div>
+        <div className={classes.details}>
           <h2>{what}</h2>
           <div className={classes.date}>
             <time>{formattedDate}</time>
@@ -25,9 +24,9 @@ function Event({ what, when, where, id, image }) {
           </div>
         </div>
         <div className={classes.actions}>
-          <Link className={classes.link} href={link}>
-            Explore Event
-          </Link>
+          <Button>
+            <Link href={link}>Explore Event</Link>
+          </Button>
         </div>
       </div>
     </li>

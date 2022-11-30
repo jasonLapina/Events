@@ -9,9 +9,8 @@ export default function Home() {
       <Head>
         <title>Our featured events</title>
       </Head>
-      <main>
-        <EventList items={featuredEvents} />
-      </main>
+      <h1>Featured Events</h1>
+      <EventList items={featuredEvents} />
     </>
   );
 }
